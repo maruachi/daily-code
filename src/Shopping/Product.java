@@ -1,19 +1,10 @@
 package Shopping;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
+import java.util.Set;
 
 public class Product {
-	private final static Map<String, HashSet> brandTable;
-	private final static Map<String, HashSet> categoryTable;
 	private final String code;
 	private final int price;
-	
-	{
-		brandTable = new HashMap<>();
-		categoryTable = new HashMap<>();
-	}
 	
 	public Product(String code, int price) {
 		this.code = code;
@@ -26,18 +17,13 @@ public class Product {
 		return products;
 	}
 	
-	public boolean hasBrand(String brand) {
-		if(!brandTable.containsKey(code)) {
-			return false;
-		}
+	public Set getBrands(String brand) {
 		
-		if(brandTable.get(code).contains(brand)) {
-			return true;
-		}
-		return false;
+		return null;
 	}
 	
-	public boolean hasCategory(String category) {
-		return false;
+	public Set getCategories(String category) {
+		
+		return null;
 	}
 }
