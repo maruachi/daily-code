@@ -7,15 +7,15 @@ public enum Coupon {
 			String brand = null;
 			
 			if(brand.equals("B001")) {
-				return price - 5000;
+				return 5000;
 			}
 			else if (brand.equals("B002")) {
-				return price - 10000;
+				return 10000;
 			}
 			else if (brand.equals("B003")) {
-				return price - 7000;
+				return 7000;
 			}
-			return -1;
+			return 0;
 		}
 	},
 	C002(){
@@ -32,7 +32,7 @@ public enum Coupon {
 			else if (brand.equals("B003")) {
 				return price/4;
 			}
-			return -1;
+			return 0;
 		}
 	},
 	C003(){
